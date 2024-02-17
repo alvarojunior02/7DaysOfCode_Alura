@@ -1,0 +1,12 @@
+{
+  "name": "7daysofcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "day1": "node ./Day1/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
