@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7DaysOfCode - Alura - Day 2</title>
+
+  <script>
+    setTimeout(() => {
+      let name = prompt('Qual o seu nome?');
+      let age = prompt('Quantos anos você tem?');
+      let programmingLanguage = prompt('Qual linguagem de programação você está estudando?');
+
+      let message = `Olá${name !== '' ? (" " + name) : ''}, `;
+      if (age !== '') {
+        message += `você tem ${age} anos `;
+      } else {
+        message += `você não informou sua idade `;
+      }
+      if (programmingLanguage !== '') {
+        message += `e já está aprendendo ${programmingLanguage}!`;
+      } else {
+        message += `e não informou a linguagem de programação que está estudando!`;
+      }
+      alert(message)
+
+      if (programmingLanguage !== '') {
+        let question = prompt(`Você gosta de estudar ${programmingLanguage}? Responda com o número 1 para SIM ou 2 para NÃO.`);
+
+        switch (question.trim()) {
+          case '1':
+            alert('Muito bom! Continue estudando e você terá muito sucesso.');
+            break;
+          case '2':
+            alert('Ahh que pena... Busque aprender por outras linguages então.')
+            break;
+          default:
+            alert('Opção inválida!')
+            break;
+        }
+      }
+    }, 300)
+  </script>
+</head>
+
+<body style="margin: 0; padding: 0; width: 100vw; height: 100vh; overflow: hidden; background-color: black;">
+
+</body>
+
+</html>
